@@ -1,8 +1,8 @@
 version: 2.1
-jobs:	# Use a package of configuration called an orb.
-  build:	orbs:
-    docker: 	  # Declare a dependency on the welcome-orb
-      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run	  welcome: circleci/welcome-orb@0.4.1
-    steps:	# Orchestrate or schedule a set of jobs
-      - checkout # check out the code in the project directory	workflows:
+jobs:
+  build:
+    docker: 
+      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
