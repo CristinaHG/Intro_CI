@@ -1,4 +1,4 @@
-version: 2.1	version: 2.1
+version: 2.1
 jobs:	# Use a package of configuration called an orb.
   build:	orbs:
     docker: 	  # Declare a dependency on the welcome-orb
